@@ -9,7 +9,7 @@
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body ng-app="mywebsite">
+<body ng-app="mywebsite" ng-controller="homeController">
 	<div id="mainwrapper">
 		<div id="fixedcontent">
 			<div id="wrapper">
@@ -22,7 +22,7 @@
 					<a href="#portfolio">Portfolio</a>
 					<a href="#contact">Contact</a>
 				</div>
-				<p class="copyright">&copy; 2019 <!--***INSERT NAME HERE--></p>
+				<p class="copyright">&copy; 2019 {{title}}</p>
 				<div id="socialbar">
                     <!--<a href="****INSERT FACEBOOK LINK HERE****">--><img src="images/facebooklogo.png"></a>
                     <!--<a href="****INSERT TWITTER LINK HERE****">--><img src="images/twitterlogo.png"></a>

@@ -1,11 +1,11 @@
-//INSERT DETAILS WHERE SPECIFIED WITH STARS
+//INSERT DETAILS WHERE  BY COMMENTS
 
 var app = angular.module('mywebsite', ['ngRoute', 'ngAnimate']);
 
 app.config(function ($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/home', {
-			title: '****INSERT NAME HERE****',
+			title: 'Home',
 			templateUrl: 'home.html',
 			controller: 'homeController'
 		})
@@ -32,7 +32,10 @@ app.config(function ($routeProvider, $locationProvider){
 });
 
 app.controller('homeController', function($scope){
-	$scope.title = '****INSERT NAME HERE****';
+	/***
+	Change John Doe to your name
+	***/
+	$scope.title = 'John Doe';
 });
 
 app.controller('resumeController', function($scope){
